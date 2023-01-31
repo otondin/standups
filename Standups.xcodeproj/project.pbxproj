@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1CFCF802989091000C7D7A1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B1CFCF7F2989091000C7D7A1 /* ComposableArchitecture */; };
 		CA350C752984506E00434F8A /* StandupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA350C742984506E00434F8A /* StandupsApp.swift */; };
 		CA350C792984506F00434F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA350C782984506F00434F8A /* Assets.xcassets */; };
 		CA350C7C2984506F00434F8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA350C7B2984506F00434F8A /* Preview Assets.xcassets */; };
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CFCF802989091000C7D7A1 /* ComposableArchitecture in Frameworks */,
 				CA350CC22984511300434F8A /* Tagged in Frameworks */,
 				CA350CBC298450E700434F8A /* SwiftUINavigation in Frameworks */,
 				CA350CBF2984510200434F8A /* IdentifiedCollections in Frameworks */,
@@ -222,6 +224,7 @@
 				CA350CBE2984510200434F8A /* IdentifiedCollections */,
 				CA350CC12984511300434F8A /* Tagged */,
 				CA350CC42984515C00434F8A /* Dependencies */,
+				B1CFCF7F2989091000C7D7A1 /* ComposableArchitecture */,
 			);
 			productName = Standups;
 			productReference = CA350C712984506E00434F8A /* Standups.app */;
@@ -302,6 +305,7 @@
 				CA350CBD2984510200434F8A /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
 				CA350CC02984511300434F8A /* XCRemoteSwiftPackageReference "swift-tagged" */,
 				CA350CC32984515C00434F8A /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				B1CFCF7E2989091000C7D7A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = CA350C722984506E00434F8A /* Products */;
 			projectDirPath = "";
@@ -709,6 +713,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B1CFCF7E2989091000C7D7A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 		CA350CBA298450E700434F8A /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
@@ -744,6 +756,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B1CFCF7F2989091000C7D7A1 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1CFCF7E2989091000C7D7A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
 		CA350CBB298450E700434F8A /* SwiftUINavigation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CA350CBA298450E700434F8A /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
